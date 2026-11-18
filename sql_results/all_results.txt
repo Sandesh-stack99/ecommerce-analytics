@@ -1,0 +1,247 @@
+
+====================================================================================================
+Q01_top_10_best_selling_products: Business question: Which 10 products sell the most units?
+====================================================================================================
+           product_name               category  units_sold  orders    revenue
+         Leather Wallet                Fashion         400     208  331489.95
+         Water Purifier         Home & Kitchen         378     186 4549071.10
+         Cotton T-Shirt                Fashion         367     196  237630.45
+             Sunglasses                Fashion         362     198  439240.50
+       Ethnic Kurta Set                Fashion         356     177  641944.80
+Python Programming Book     Books & Stationery         323     160  165941.55
+       Badminton Racket       Sports & Fitness         321     153  567797.80
+        Face Wash Combo Beauty & Personal Care         307     152  112676.38
+        Women's Handbag                Fashion         303     179  570820.95
+           Bedsheet Set         Home & Kitchen         292     162  433516.95
+
+====================================================================================================
+Q02_revenue_by_category: Business question: Which categories generate the most revenue and what is each one's profit margin?
+====================================================================================================
+              category  orders     revenue     profit  profit_margin_pct  revenue_share_pct
+           Electronics    1189 15727765.12 1251411.76               7.96              49.84
+        Home & Kitchen     904  8942575.73 2657511.83              29.72              28.34
+               Fashion    1110  2929102.00 1122154.41              38.31               9.28
+      Sports & Fitness     629  2000536.62  647871.00              32.38               6.34
+Beauty & Personal Care     736  1444122.18  638286.41              44.20               4.58
+    Books & Stationery     525   514139.30  138933.38              27.02               1.63
+
+====================================================================================================
+Q03_monthly_sales_growth: Business question: How does revenue change month over month?
+====================================================================================================
+  month  orders    revenue  previous_month_revenue  mom_growth_pct
+2023-01      86  476624.15                     NaN             NaN
+2023-02      69  380347.80               476624.15          -20.20
+2023-03      84  606200.45               380347.80           59.38
+2023-04      78  396514.70               606200.45          -34.59
+2023-05      93  487251.20               396514.70           22.88
+2023-06      84  404477.00               487251.20          -16.99
+2023-07     106  660142.28               404477.00           63.21
+2023-08      91  450042.55               660142.28          -31.83
+2023-09     106  603855.25               450042.55           34.18
+2023-10     140 1033787.25               603855.25           71.20
+2023-11     117  766175.65              1033787.25          -25.89
+2023-12     121  720654.53               766175.65           -5.94
+2024-01     108  736925.40               720654.53            2.26
+2024-02      95  681166.50               736925.40           -7.57
+2024-03     108  574220.25               681166.50          -15.70
+
+====================================================================================================
+Q04_yearly_sales_growth: Business question: How fast is the business growing year over year?
+====================================================================================================
+ year  orders     revenue     profit  yoy_growth_pct
+ 2023    1175  6986072.81 1431122.95             NaN
+ 2024    1604  9784185.37 2008441.95           40.05
+ 2025    2314 14787982.77 3016603.89           51.14
+
+====================================================================================================
+Q05_repeat_customers: Business question: What share of customers buy more than once?
+====================================================================================================
+ total_customers  repeat_customers  repeat_rate_pct  avg_orders_per_customer  max_orders_by_one_customer
+            1278               855             66.9                     3.99                          39
+
+====================================================================================================
+Q06_average_order_value: Business question: What is the average order value overall and by category?
+====================================================================================================
+               segment  orders  avg_order_value
+           Electronics    1189         13227.73
+        Home & Kitchen     904          9892.23
+            All orders    5093          6196.40
+      Sports & Fitness     629          3180.50
+               Fashion    1110          2638.83
+Beauty & Personal Care     736          1962.12
+    Books & Stationery     525           979.31
+
+====================================================================================================
+Q07_most_profitable_products: Business question: Which 10 products earn the most profit?
+====================================================================================================
+     product_name               category  units_sold    revenue     profit  profit_margin_pct
+   Water Purifier         Home & Kitchen         378 4549071.10 1335024.59              29.35
+   Vacuum Cleaner         Home & Kitchen         198 1463352.80  437161.44              29.87
+           Laptop            Electronics         111 5475011.80  417903.11               7.63
+           Tablet            Electronics         223 4824662.92  416014.83               8.62
+        Air Fryer         Home & Kitchen         249 1278549.93  385026.94              30.11
+ Ethnic Kurta Set                Fashion         356  641944.80  252225.91              39.29
+Dumbbell Set 20kg       Sports & Fitness         276  761889.10  242850.67              31.87
+       Smartphone            Electronics         159 2820944.50  226119.29               8.02
+  Women's Handbag                Fashion         303  570820.95  222070.68              38.90
+    Perfume 100ml Beauty & Personal Care         240  430925.85  192307.82              44.63
+
+====================================================================================================
+Q08_state_sales_performance: Business question: How does each state perform?
+====================================================================================================
+         state  orders  customers    revenue     profit  avg_order_value  revenue_share_pct
+   Maharashtra    1369        298 8690119.33 1705186.01          6347.79              27.54
+     Karnataka     691        162 4381106.98  870318.96          6340.24              13.88
+         Delhi     658        167 3683045.40  806448.33          5597.33              11.67
+    Tamil Nadu     445        123 2835278.87  553401.78          6371.41               8.98
+       Gujarat     424        103 2713226.85  534973.40          6399.12               8.60
+     Telangana     419        110 2371083.25  502300.77          5658.91               7.51
+   West Bengal     265         63 1869044.75  410033.69          7053.00               5.92
+     Rajasthan     177         53 1236247.90  294112.03          6984.45               3.92
+ Uttar Pradesh     198         44  951593.65  207314.17          4806.03               3.02
+    Chandigarh     130         26  920145.90  181786.88          7078.05               2.92
+Madhya Pradesh     133         55  796212.55  156358.66          5986.56               2.52
+        Kerala     118         43  693414.10  146097.64          5876.39               2.20
+Andhra Pradesh      66         31  417721.42   87836.47          6329.11               1.32
+
+====================================================================================================
+Q09_top_10_cities: Business question: Which 10 cities bring in the most revenue?
+====================================================================================================
+     city       state  orders  customers    revenue     profit
+   Mumbai Maharashtra     870        189 5509788.03 1041200.57
+Bengaluru   Karnataka     690        161 4380158.38  869898.88
+    Delhi       Delhi     656        165 3678333.10  804360.92
+     Pune Maharashtra     402         80 2470896.75  534480.89
+Hyderabad   Telangana     419        110 2371083.25  502300.77
+  Chennai  Tamil Nadu     346         96 2242705.57  451146.20
+  Kolkata West Bengal     265         63 1869044.75  410033.69
+Ahmedabad     Gujarat     264         60 1621091.75  315096.70
+   Jaipur   Rajasthan     176         52 1233004.30  293209.48
+    Surat     Gujarat     160         43 1092135.10  219876.70
+
+====================================================================================================
+Q10_yearly_customer_retention: Business question: Of the customers active last year, how many bought again this year?
+====================================================================================================
+ year  active_customers  also_active_previous_year  previous_year_customers  retention_rate_pct
+ 2023               447                          0                        0                 NaN
+ 2024               756                        305                      447               68.23
+ 2025               987                        537                      756               71.03
+
+====================================================================================================
+Q11_payment_method_analysis: Business question: How do customers pay, and which methods lead to more cancellations or returns?
+====================================================================================================
+  payment_method  orders  share_pct  cancel_rate_pct  return_rate_pct
+             UPI    2033      34.09             5.76             8.07
+     Credit Card    1173      19.67             6.31             6.65
+      Debit Card     945      15.85             5.93             7.09
+Cash on Delivery     940      15.76            13.09             7.34
+     Net Banking     458       7.68             6.77             8.30
+          Wallet     299       5.01             4.68             7.69
+         Unknown     116       1.95             6.90             7.76
+
+====================================================================================================
+Q12_order_status_breakdown: Business question: How many orders are delivered, shipped, cancelled or returned, and how much value is lost?
+====================================================================================================
+order_status  orders  share_pct  order_value
+   Delivered    5015      84.09  31044425.05
+    Returned     448       7.51   2567093.75
+   Cancelled     423       7.09   2367449.20
+     Shipped      78       1.31    513815.90
+
+====================================================================================================
+Q13_top_10_customers_by_revenue: Business question: Who are the 10 most valuable customers?
+====================================================================================================
+customer_id   customer_name  orders  lifetime_revenue  lifetime_profit first_order last_order
+      C2127    Nikhil Verma      29         207615.00         49408.18  2023-04-09 2025-12-26
+      C1323    Deepak Singh      21         196532.20         40541.31  2023-03-31 2025-11-19
+      C1973  Nikhil Trivedi      29         192256.50         43780.92  2023-03-31 2025-12-07
+      C1154     Aarav Joshi      18         189881.55         34065.82  2023-04-04 2025-12-21
+      C1422 Siddharth Mehta      26         184574.55         24919.87  2024-09-06 2025-12-31
+      C1249     Ankit Joshi      39         183118.00         34827.94  2023-01-15 2025-12-29
+      C2071    Neha Trivedi      38         169520.60         39766.67  2023-05-16 2025-10-19
+      C0105     Sanjay Bose      16         169175.95         38682.29  2023-03-05 2025-11-10
+      C0230   Ankit Agarwal      16         167979.15         28434.24  2023-02-01 2025-12-08
+      C0294  Lakshmi Pandey      16         166149.50          9487.38  2023-11-18 2025-12-15
+
+====================================================================================================
+Q14_discount_impact_on_profit: Business question: Do bigger discounts lift volume or just destroy margin?
+====================================================================================================
+   discount_band  orders  avg_units_per_order     revenue     profit  profit_margin_pct
+0% (no discount)    1192                 1.70  8469056.50 2389136.29              28.21
+           1-10%    1903                 1.78 11857476.20 2805837.21              23.66
+          11-20%    1311                 1.74  7765467.83 1081588.07              13.93
+          21-30%     687                 1.73  3466240.42  179607.22               5.18
+
+====================================================================================================
+Q15_sales_by_weekday: Business question: Which days of the week are busiest?
+====================================================================================================
+  weekday  orders    revenue  avg_order_value
+   Monday     725 4317089.53          5954.61
+  Tuesday     684 4128485.37          6035.80
+Wednesday     685 4063157.70          5931.62
+ Thursday     705 4544930.60          6446.71
+   Friday     706 4640088.57          6572.36
+ Saturday     793 4586355.58          5783.55
+   Sunday     795 5278133.60          6639.16
+
+====================================================================================================
+Q16_customer_segment_summary: Business question: How much revenue does each RFM customer segment contribute?
+====================================================================================================
+            segment  customers     revenue  revenue_share_pct  avg_orders  avg_days_since_last_order
+          Champions        299 16130125.80              51.11        8.84                       38.0
+    Loyal Customers        107  4019319.50              12.74        6.21                      132.0
+   Cannot Lose Them        105  3571494.78              11.32        5.34                      339.0
+Potential Loyalists        212  2523530.57               8.00        1.83                       46.0
+            At Risk        183  1957918.75               6.20        1.54                      293.0
+        Hibernating        223  1751389.78               5.55        1.35                      647.0
+    Needs Attention        149  1604461.77               5.08        1.69                      141.0
+
+====================================================================================================
+Q17_category_margin_by_year: Business question: Are category profit margins improving or shrinking over time?
+====================================================================================================
+ year               category    revenue     profit  profit_margin_pct
+ 2023 Beauty & Personal Care  298990.53  131566.78              44.00
+ 2024 Beauty & Personal Care  420385.60  181621.76              43.20
+ 2025 Beauty & Personal Care  724746.05  325097.87              44.86
+ 2023     Books & Stationery  117844.60   33204.26              28.18
+ 2024     Books & Stationery  163797.90   43272.27              26.42
+ 2025     Books & Stationery  232496.80   62456.85              26.86
+ 2023            Electronics 3669156.00  350722.42               9.56
+ 2024            Electronics 4948294.55  415406.21               8.39
+ 2025            Electronics 7110314.57  485283.13               6.83
+ 2023                Fashion  682861.30  261792.30              38.34
+ 2024                Fashion  917103.65  353647.57              38.56
+ 2025                Fashion 1329137.05  506714.54              38.12
+ 2023         Home & Kitchen 1774051.73  514028.77              28.97
+ 2024         Home & Kitchen 2632003.75  784205.01              29.79
+ 2025         Home & Kitchen 4536520.25 1359278.05              29.96
+
+====================================================================================================
+Q18_seasonality_index: Business question: Which months of the year are strongest? (100 = an average month)
+====================================================================================================
+ month_no    revenue  seasonality_index
+        1 2096254.85               79.7
+        2 2174047.20               82.7
+        3 2480976.43               94.3
+        4 2218225.00               84.3
+        5 2490193.40               94.7
+        6 2061258.17               78.4
+        7 2331618.50               88.7
+        8 2627434.00               99.9
+        9 2679061.85              101.9
+       10 3486256.07              132.6
+       11 3401852.85              129.4
+       12 3511062.63              133.5
+
+====================================================================================================
+Q19_customer_cohort_retention: Business question: For customers acquired in each year, how many are still buying in later years?
+====================================================================================================
+ cohort_year  active_year  active_customers  pct_of_cohort
+        2023         2023               447         100.00
+        2023         2024               305          68.23
+        2023         2025               311          69.57
+        2024         2024               451         100.00
+        2024         2025               296          65.63
+        2025         2025               380         100.00
+
+19 queries executed. Results saved in sql_results/

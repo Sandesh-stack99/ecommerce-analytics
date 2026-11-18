@@ -1,0 +1,8 @@
+segment,customers,revenue,revenue_share_pct,avg_orders,avg_days_since_last_order
+Champions,299,16130125.8,51.11,8.84,38.0
+Loyal Customers,107,4019319.5,12.74,6.21,132.0
+Cannot Lose Them,105,3571494.78,11.32,5.34,339.0
+Potential Loyalists,212,2523530.57,8.0,1.83,46.0
+At Risk,183,1957918.75,6.2,1.54,293.0
+Hibernating,223,1751389.78,5.55,1.35,647.0
+Needs Attention,149,1604461.77,5.08,1.69,141.0

@@ -1,0 +1,8 @@
+payment_method,orders,share_pct,cancel_rate_pct,return_rate_pct
+UPI,2033,34.09,5.76,8.07
+Credit Card,1173,19.67,6.31,6.65
+Debit Card,945,15.85,5.93,7.09
+Cash on Delivery,940,15.76,13.09,7.34
+Net Banking,458,7.68,6.77,8.3
+Wallet,299,5.01,4.68,7.69
+Unknown,116,1.95,6.9,7.76
